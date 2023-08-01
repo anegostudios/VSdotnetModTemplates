@@ -4,6 +4,7 @@
     <PackageType>Template</PackageType>
     <PackageVersion>1.0.0</PackageVersion>
     <PackageId>VintageStory.Mod.Templates</PackageId>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <Title>Vintage Story Templates</Title>
     <Authors>Anego Studios</Authors>
     <Description>Templates to use when creating an mod for Vintage Story by Angeo Studios.</Description>
