@@ -1,0 +1,24 @@
+{
+  "profiles": {
+    "Client": {
+      "commandName": "Executable",
+      //#if (IsWindows)
+      "executablePath": "$(VINTAGE_STORY)/Vintagestory.exe",
+      //#else
+      "executablePath": "$(VINTAGE_STORY)/Vintagestory",
+      //#endif
+      "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods",
+      "workingDirectory": "$(VINTAGE_STORY)"
+    },
+    "Server": {
+      "commandName": "Executable",
+      //#if (IsWindows)
+      "executablePath": "$(VINTAGE_STORY)/VintagestoryServer.exe",
+      //#else
+      "executablePath": "$(VINTAGE_STORY)/VintagestoryServer",
+      //#endif
+      "commandLineArgs": "--tracelog --addModPath $(ProjectDir)/bin/$(Configuration)/Mods",
+      "workingDirectory": "$(VINTAGE_STORY)"
+    }
+  }
+}

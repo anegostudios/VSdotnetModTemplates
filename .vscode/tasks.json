@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "uninstall",
+			"options": {
+				"cwd": "${workspaceFolder}/VSModTemplates"
+			},
+			"command": "dotnet new uninstall VintageStory.Mod.Templates"
+		},
+		{
+			"type": "shell",
+			"label": "install",
+			"dependsOn":["uninstall","pack"],
+			"group": "build",
+			"options": {
+				"cwd": "${workspaceFolder}/VSModTemplates"
+			},
+			"command": "dotnet new install ./bin/Debug/VintageStory.Mod.Templates.0.1.0-dev.2.nupkg"
+		},
+		{
+			"type": "shell",
+			"label": "pack",
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/VSModTemplates"
+			},
+			"command": "dotnet pack"
+		}
+	]
+}
