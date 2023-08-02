@@ -15,26 +15,11 @@
         "type": "project"
     },
     "symbols": {
-        "Platform": {
+        "SuppressWindowsConsoleWindow": {
             "type": "parameter",
-            "datatype": "choice",
-            "description": "The current platform for development (Only important for how to launch the mod for testing).",
-            "defaultValue": "Windows",
-            "choices": [
-                {
-                    "choice": "Windows",
-                    "description": "Windows"
-                },
-                {
-                    "choice": "Linux",
-                    "description": "Linux/Mac"
-                }
-            ]
-        },
-        "IsWindows": {
-            "type": "computed",
             "datatype": "bool",
-            "value": "(Platform == 'Windows')"
+            "description": "Suppresses the external console window on Windows (You may only use this on Windows OS)",
+            "defaultValue": "false"
         },
         "vsInstall": {
             "type": "parameter",

@@ -16,7 +16,7 @@
 			"options": {
 				"cwd": "${workspaceFolder}/VSModTemplates"
 			},
-			"command": "dotnet new install ./bin/Debug/VintageStory.Mod.Templates.1.0.1.nupkg"
+			"command": "dotnet new install ./bin/Release/VintageStory.Mod.Templates.1.0.2.nupkg"
 		},
 		{
 			"type": "shell",
