@@ -13,22 +13,22 @@
 			"type": "shell",
 			"label": "install",
 			"dependsOn":["uninstall","pack"],
-			"group": "build",
 			"options": {
 				"cwd": "${workspaceFolder}/VSModTemplates"
 			},
-			"command": "dotnet new install ./bin/Debug/VintageStory.Mod.Templates.0.1.0-dev.2.nupkg"
+			"command": "dotnet new install ./bin/Debug/VintageStory.Mod.Templates.1.0.1.nupkg"
 		},
 		{
 			"type": "shell",
 			"label": "pack",
+			"group": "build",
 			"problemMatcher": [
 				"$msCompile"
 			],
 			"options": {
 				"cwd": "${workspaceFolder}/VSModTemplates"
 			},
-			"command": "dotnet pack"
+			"command": "dotnet pack -c Release"
 		}
 	]
 }
