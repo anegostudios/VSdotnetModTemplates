@@ -19,7 +19,9 @@
             "args": [
                 // "--playStyle" , "preset-surviveandbuild",
                 // "--openWorld" , "modding test world",
-                "--tracelog","--addModPath","${workspaceFolder}/_ProjectName_/bin/Debug/Mods"
+                "--tracelog",
+                "--addModPath",
+                "${workspaceFolder}/_ProjectName_/bin/Debug/Mods"
             ],
             "console": "internalConsole",
             "stopAtEntry": false
@@ -37,10 +39,23 @@
             },
             "preLaunchTask": "build",
             "args": [
-                "--tracelog","--addModPath","${workspaceFolder}/_ProjectName_/bin/Debug/Mods"
+                "--tracelog",
+                "--addModPath",
+                "${workspaceFolder}/_ProjectName_/bin/Debug/Mods"
             ],
             "console": "internalConsole",
             "stopAtEntry": false
+        },
+        {
+            "name": "CakeBuild",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build (Cake)",
+            "program": "${workspaceFolder}/CakeBuild/bin/Debug/net7.0/CakeBuild.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/CakeBuild",
+            "stopAtEntry": false,
+            "console": "internalConsole"
         }
     ]
 }
