@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.3</PackageVersion>
+    <PackageVersion>1.0.4</PackageVersion>
     <PackageId>VintageStory.Mod.Templates</PackageId>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <Title>Vintage Story Templates</Title>
@@ -11,6 +11,8 @@
     <PackageTags>dotnet-new;templates</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>modicon.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/anegostudios/VSdotnetModTemplates</PackageProjectUrl>
 
     <TargetFramework>net7.0</TargetFramework>
 
