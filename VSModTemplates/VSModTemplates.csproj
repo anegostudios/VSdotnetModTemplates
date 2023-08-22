@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.5</PackageVersion>
+    <PackageVersion>1.0.6</PackageVersion>
     <PackageId>VintageStory.Mod.Templates</PackageId>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <Title>Vintage Story Templates</Title>
