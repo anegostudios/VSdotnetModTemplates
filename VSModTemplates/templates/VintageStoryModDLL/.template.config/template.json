@@ -91,7 +91,7 @@
         "IncludeSQLite": {
             "type": "parameter",
             "datatype": "bool",
-            "description": "Adds System.Data.SQLite as reference to the project",
+            "description": "Adds Microsoft.Data.Sqlite as reference to the project",
             "defaultValue": "false"
         },
         "IncludeVSCode": {

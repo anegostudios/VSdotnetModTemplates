@@ -59,8 +59,8 @@
     </Reference>
 #endif -->
 <!--#if (IncludeSQLite)
-    <Reference Include="System.Data.SQLite">
-      <HintPath>$(VINTAGE_STORY)/Lib/System.Data.SQLite.dll</HintPath>
+    <Reference Include="Microsoft.Data.Sqlite">
+      <HintPath>$(VINTAGE_STORY)/Lib/Microsoft.Data.Sqlite.dll</HintPath>
       <Private>False</Private>
     </Reference>
 #endif -->
