@@ -34,6 +34,12 @@
             "description": "Adds sample code to the template mod",
             "defaultValue": "false"
         },
+        "AddAssetFolder": {
+            "type": "parameter",
+            "datatype": "bool",
+            "description": "Adds the asset folder to the template mod",
+            "defaultValue": "false"
+        },
         "AddSolutionFile": {
             "type": "parameter",
             "datatype": "bool",
@@ -99,15 +105,25 @@
             "datatype": "bool",
             "description": "Include VSCode tasks.json and launch.json",
             "defaultValue": "false"
+        },
+        "ModIdLowercase": {
+            "type": "generated",
+            "generator": "casing",
+            "parameters": {
+              "source":"name",
+              "toLower": true
+            },
+            "replaces": "_modid_",
+            "fileRename": "_modid_"
         }
     },
     "sources": [
         {
             "modifiers": [
                 {
-                    "condition": "(!AddSampleCode)",
+                    "condition": "(!AddSampleCode && !AddAssetFolder)",
                     "exclude": [
-                        "resources/assets/**/*"
+                        "_ProjectName_/assets/_modid_/**/*"
                     ]
                 },
                 {

@@ -1,6 +1,6 @@
 {
     "type": "code",
-    "modid": "_ProjectName_",
+    "modid": "_modid_",
     "name": "_ProjectName_",
     "authors": [
         "Unknown"
