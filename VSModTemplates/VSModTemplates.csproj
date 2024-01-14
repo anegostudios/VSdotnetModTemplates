@@ -8,12 +8,12 @@
     <Title>Vintage Story Templates</Title>
     <Authors>Anego Studios</Authors>
     <Description>Templates to use when creating an mod for Vintage Story by Angeo Studios.</Description>
-    <PackageTags>dotnet-new;templates</PackageTags>
+    <PackageTags>dotnet-new;templates;VintageStory;Modding</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>modicon.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/anegostudios/VSdotnetModTemplates</RepositoryUrl>
     <PackageProjectUrl>https://github.com/anegostudios/VSdotnetModTemplates</PackageProjectUrl>
-
     <TargetFramework>net7.0</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
