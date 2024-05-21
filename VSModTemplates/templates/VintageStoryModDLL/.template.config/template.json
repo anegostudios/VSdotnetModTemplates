@@ -6,10 +6,10 @@
         "Games",
         "Vintage Story"
     ],
-    "name": "Vintage Story Mod (.dll only)",
+    "name": "Vintage Story Mod (code/dll only)",
     "shortName": "vsmoddll",
     "sourceName": "_ProjectName_",
-    "description": "Includes only a basic project and a Sample ModSystem to start modding. Will only output a .dll",
+    "description": "A project to outputs a code only mod. (Advanced)",
     "tags": {
         "language": "C#",
         "type": "project"

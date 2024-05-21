@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "identity": "VSModTemplate.Basic",
+    "author": "Anego Studios",
+    "classifications": [
+        "Games",
+        "Vintage Story"
+    ],
+    "name": "Vintage Story Basic Mod Template",
+    "shortName": "vsbasicmod",
+    "sourceName": "_ProjectName_",
+    "description": "A project for creating a basic Vintage Story mod with some sample code to get started",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "symbols": {
+        "ModIdLowercase": {
+            "type": "generated",
+            "generator": "casing",
+            "parameters": {
+              "source":"name",
+              "toLower": true
+            },
+            "replaces": "_modid_",
+            "fileRename": "_modid_"
+        }
+    }
+}
