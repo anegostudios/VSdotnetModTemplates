@@ -9,7 +9,7 @@
     "name": "Vintage Story Mod",
     "shortName": "vsmod",
     "sourceName": "_ProjectName_",
-    "description": "A project for creating a Vintage Strory mod with the option to select your dependencies. (Advanced)",
+    "description": "A project for creating a Vintage Strory mod. (Advanced)",
     "tags": {
         "language": "C#",
         "type": "project"
