@@ -3,20 +3,57 @@
 	"tasks": [
 		{
 			"type": "shell",
+			"label": "uninstallBasic",
+			"options": {
+				"cwd": "${workspaceFolder}/VSBasicModTemplate"
+			},
+			"command": "dotnet new uninstall VintageStory.Mod.BasicTemplate",
+			"problemMatcher": []
+		},
+		{
+			"type": "shell",
+			"label": "installBasic",
+			"dependsOn": [
+				"packBasic"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/VSBasicModTemplate"
+			},
+			"command": "dotnet new install ./bin/Release/VintageStory.Mod.BasicTemplate.1.0.0.nupkg",
+			"problemMatcher": []
+		},
+		{
+			"type": "shell",
+			"label": "packBasic",
+			"group": "build",
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/VSBasicModTemplate"
+			},
+			"command": "dotnet pack -c Release"
+		},
+		{
+			"type": "shell",
 			"label": "uninstall",
 			"options": {
 				"cwd": "${workspaceFolder}/VSModTemplates"
 			},
-			"command": "dotnet new uninstall VintageStory.Mod.Templates"
+			"command": "dotnet new uninstall VintageStory.Mod.Templates",
+			"problemMatcher": []
 		},
 		{
 			"type": "shell",
 			"label": "install",
-			"dependsOn":["uninstall","pack"],
+			"dependsOn": [
+				"pack"
+			],
 			"options": {
 				"cwd": "${workspaceFolder}/VSModTemplates"
 			},
-			"command": "dotnet new install ./bin/Release/VintageStory.Mod.Templates.1.0.8.nupkg"
+			"command": "dotnet new install ./bin/Release/VintageStory.Mod.Templates.1.0.8.nupkg",
+			"problemMatcher": []
 		},
 		{
 			"type": "shell",
