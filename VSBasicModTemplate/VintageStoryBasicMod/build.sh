@@ -1,1 +1,1 @@
-dotnet run --project ./CakeBuild/CakeBuild.csproj -- "$@"
+dotnet run --project ./ZZCakeBuild/CakeBuild.csproj -- "$@"
