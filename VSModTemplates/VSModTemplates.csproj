@@ -25,7 +25,7 @@
 
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="\"/>
-    <None Include="modicon.png" Pack="true" PackagePath=""/>
+    <None Include="..\modicon.png" Pack="true" PackagePath=""/>
     <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
