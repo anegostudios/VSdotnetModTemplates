@@ -21,7 +21,7 @@
             "description": "Suppresses the external console window on Windows (You may only use this on Windows OS)",
             "defaultValue": "false"
         },
-        "MacOsLaunchSettings": {
+        "MacOSLaunchSettings": {
             "type": "parameter",
             "datatype": "bool",
             "description": "Launch settings for Mac OS (You may only use this on Mac OS)",
