@@ -5,7 +5,7 @@ using Vintagestory.API.Config;
 #endif
 using Vintagestory.API.Common;
 
-[assembly: ModInfo("_ProjectName_",
+[assembly: ModInfo("_ProjectName_", "_ProjectName_",
                     Authors = new string[] { "Unknown" },
                     Description = "This is a sample mod",
                     Version = "1.0.0")]
@@ -18,17 +18,17 @@ namespace _ProjectName_
         // Useful for registering block/entity classes on both sides
         public override void Start(ICoreAPI api)
         {
-            api.Logger.Notification("Hello from template mod: " + api.Side);
+            Mod.Logger.Notification("Hello from template mod: " + api.Side);
         }
 
         public override void StartServerSide(ICoreServerAPI api)
         {
-            api.Logger.Notification("Hello from template mod server side: " + Lang.Get("_ProjectName_:hello"));
+            Mod.Logger.Notification("Hello from template mod server side: " + Lang.Get("_ProjectName_:hello"));
         }
 
         public override void StartClientSide(ICoreClientAPI api)
         {
-            api.Logger.Notification("Hello from template mod client side: " + Lang.Get("_ProjectName_:hello"));
+            Mod.Logger.Notification("Hello from template mod client side: " + Lang.Get("_ProjectName_:hello"));
         }
 #endif
     }

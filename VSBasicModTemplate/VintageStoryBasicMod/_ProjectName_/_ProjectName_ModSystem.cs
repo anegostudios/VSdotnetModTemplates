@@ -12,17 +12,17 @@ public class _ProjectName_ModSystem : ModSystem
     // Useful for registering block/entity classes on both sides
     public override void Start(ICoreAPI api)
     {
-        api.Logger.Notification("Hello from template mod: " + api.Side);
+        Mod.Logger.Notification("Hello from template mod: " + api.Side);
     }
 
     public override void StartServerSide(ICoreServerAPI api)
     {
-        api.Logger.Notification("Hello from template mod server side: " + Lang.Get("_modid_:hello"));
+        Mod.Logger.Notification("Hello from template mod server side: " + Lang.Get("_modid_:hello"));
     }
 
     public override void StartClientSide(ICoreClientAPI api)
     {
-        api.Logger.Notification("Hello from template mod client side: " + Lang.Get("_modid_:hello"));
+        Mod.Logger.Notification("Hello from template mod client side: " + Lang.Get("_modid_:hello"));
     }
 
 }
