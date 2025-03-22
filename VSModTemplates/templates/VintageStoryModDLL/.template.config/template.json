@@ -21,6 +21,12 @@
             "description": "Suppresses the external console window on Windows (You may only use this on Windows OS)",
             "defaultValue": "false"
         },
+        "MacOSLaunchSettings": {
+            "type": "parameter",
+            "datatype": "bool",
+            "description": "Launch settings for Mac OS (You may only use this on Mac OS)",
+            "defaultValue": "false"
+        },
         "vsInstall": {
             "type": "parameter",
             "datatype": "string",
