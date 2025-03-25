@@ -21,7 +21,9 @@
                 // "--openWorld" , "modding test world",
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/_ProjectName_/bin/Debug/Mods"
+                "${workspaceFolder}/_ProjectName_/bin/Debug/Mods",
+                "--addOrigin",
+                "${workspaceFolder}/_ProjectName_/assets"
             ],
             "console": "internalConsole",
             "stopAtEntry": false
@@ -41,7 +43,9 @@
             "args": [
                 "--tracelog",
                 "--addModPath",
-                "${workspaceFolder}/_ProjectName_/bin/Debug/Mods"
+                "${workspaceFolder}/_ProjectName_/bin/Debug/Mods",
+                 "--addOrigin",
+                 "${workspaceFolder}/_ProjectName_/assets"
             ],
             "console": "internalConsole",
             "stopAtEntry": false

@@ -68,10 +68,13 @@
   </ItemGroup>
 
 <ItemGroup>
-  <Content Include="assets\**">
+  <Content Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
-  <Content Include="modinfo.json">
+</ItemGroup>
+
+<ItemGroup>
+  <Content Include="modicon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
 </ItemGroup>

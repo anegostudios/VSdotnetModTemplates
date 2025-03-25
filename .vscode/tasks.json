@@ -19,7 +19,7 @@
 			"options": {
 				"cwd": "${workspaceFolder}/VSBasicModTemplate"
 			},
-			"command": "dotnet new install ./bin/Release/VintageStory.Mod.BasicTemplate.0.1.1.nupkg",
+			"command": "dotnet new install ./bin/Release/VintageStory.Mod.BasicTemplate.0.1.2.nupkg",
 			"problemMatcher": []
 		},
 		{
@@ -52,7 +52,7 @@
 			"options": {
 				"cwd": "${workspaceFolder}/VSModTemplates"
 			},
-			"command": "dotnet new install ./bin/Release/VintageStory.Mod.Templates.1.0.9.nupkg",
+			"command": "dotnet new install ./bin/Release/VintageStory.Mod.Templates.1.0.10.nupkg",
 			"problemMatcher": []
 		},
 		{

@@ -7,7 +7,7 @@
       "commandLineArgs": "--tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\"",
       //#else
       "executablePath": "dotnet",
-      "commandLineArgs": "\"$(VINTAGE_STORY)/Vintagestory.dll\" --tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\"",
+      "commandLineArgs": "\"$(VINTAGE_STORY)/Vintagestory.dll\" --tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\" --addOrigin \"$(ProjectDir)/assets\"",
       //#endif
       "workingDirectory": "$(VINTAGE_STORY)"
     },
@@ -18,7 +18,7 @@
       "commandLineArgs": "--tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\"",
       //#else
       "executablePath": "dotnet",
-      "commandLineArgs": "\"$(VINTAGE_STORY)/VintagestoryServer.dll\" --tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\"",
+      "commandLineArgs": "\"$(VINTAGE_STORY)/VintagestoryServer.dll\" --tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\" --addOrigin \"$(ProjectDir)/assets\"",
       //#endif
       "workingDirectory": "$(VINTAGE_STORY)"
     }
