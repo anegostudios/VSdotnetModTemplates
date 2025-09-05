@@ -75,7 +75,7 @@
 </ItemGroup>
 
 <ItemGroup>
-  <Content Include="modicon.png">
+  <Content Include="modicon.png" Condition="Exists('modicon.png')">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
 </ItemGroup>
