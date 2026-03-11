@@ -5,6 +5,9 @@
       //#if (SuppressWindowsConsoleWindow)
       "executablePath": "$(VINTAGE_STORY)/Vintagestory.exe",
       "commandLineArgs": "--tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\"",
+      //#elseif (MacOSLaunchSettings)
+      "executablePath": "$(VINTAGE_STORY)/Vintagestory",
+      "commandLineArgs": "--tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\"",
       //#else
       "executablePath": "dotnet",
       "commandLineArgs": "\"$(VINTAGE_STORY)/Vintagestory.dll\" --tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\"",
@@ -15,6 +18,9 @@
       "commandName": "Executable",
       //#if (SuppressWindowsConsoleWindow)
       "executablePath": "$(VINTAGE_STORY)/VintagestoryServer.exe",
+      "commandLineArgs": "--tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\"",
+      //#elseif (MacOSLaunchSettings)
+      "executablePath": "$(VINTAGE_STORY)/VintagestoryServer",
       "commandLineArgs": "--tracelog --addModPath \"$(ProjectDir)/bin/$(Configuration)/Mods\"",
       //#else
       "executablePath": "dotnet",
